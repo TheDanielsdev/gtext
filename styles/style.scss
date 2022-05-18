@@ -1,5 +1,6 @@
 $header: #ffff;
 $aside: rgb(109, 109, 252);
+$bShadow: 5px 5px 5px 0px rgb(195, 195, 195);
 body {
     overflow: hidden;
     box-sizing: border-box;
@@ -12,7 +13,7 @@ body {
     margin-left: -10px;
     margin-bottom: -17px;
     background-color: $header;
-    box-shadow: 5px 5px 5px 0px rgb(195, 195, 195);
+    box-shadow: $bShadow;
     div {
         position: absolute;
         display: flex;
@@ -98,6 +99,7 @@ section {
     top: 25vh;
     left: 40vh;
     border-radius: 10px;
+    box-shadow: $bShadow;
     div {
         position: absolute;
         padding: 20px;
@@ -108,7 +110,7 @@ section {
         }
         button {
             display: inline;
-            margin-left: 30px;
+            margin-left: 15px;
             background-color: $header;
             height: 5vh;
             border: none;
@@ -131,10 +133,11 @@ section {
     position: absolute;
     height: 30vh;
     width: 20vw;
-    background-color: red;
+    background-color: $header;
     top: 25vh;
     left: 100vh;
     border-radius: 10px;
+    box-shadow: $bShadow;
     div {
         position: absolute;
         padding: 20px;
@@ -145,12 +148,12 @@ section {
         }
         button {
             display: inline;
-            margin-left: 30px;
+            margin-left: 15px;
             background-color: $aside;
             height: 5vh;
             border: none;
             border-radius: 5px;
-            color: $aside;
+            color: $header;
             font-weight: 900;
             font-size: small;
             &:hover {
